@@ -1,0 +1,60 @@
+
+         .container{ 
+        height:550px;
+         }
+        .Map{
+  	float: left;
+  	width:800px;
+  	height:550px;
+  	
+  }
+  .Menu{
+  	width:300px;
+    float: left;
+  	height:550px;
+  }
+  .delivers{	
+  	height: 190px;
+  border: 1px solid #000;
+  }
+  .Adelivery{
+  	border: 1px solid #000;
+  	height: 90px;
+  }
+  .Wdelivery{
+     border: 1px solid #000;
+  	height: 90px;
+  }
+  .NewUpdate{
+  	border: 1px solid #000;
+  	height: 180px;
+  }
+  .btn.btn-danger{
+  	width: 296px;
+  }
+  .btn.btn-warning{
+  	width: 296px;
+  }
+  .Top{
+  	border: 1px solid #000;
+  	height: 420px;
+  }
+  .Bottom{
+  	border: 1px solid #000;
+  	height: 130px;
+  }
+  .searchByCostumer{
+  	margin-top: 10px;
+  	float: left;
+  border: 1px solid #000;
+  margin-right:50px;
+   margin-left:50px;
+   height: 100px;
+  }
+  .searchByDeliver{
+  	margin-top: 10px;
+  	display: inline-block;
+  border: 1px solid #000;
+  height: 100px;
+  }  
+  

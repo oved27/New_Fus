@@ -1,0 +1,104 @@
+ body{
+    width: 100%;
+  }
+  .container{
+   width: 100%;
+    position:absolute;
+    height:100%;
+  }
+  .status{
+    display: inline-block;
+    float: left;
+    width:11%;
+    height:100%;
+    border-right: 1px solid black;
+    position: relative;
+  }
+  .DisplayDelivery{
+    display: inline-block;
+    float: left;
+    width:69%;
+    height:100%; 
+     position: relative; 
+  }
+
+
+  .buttonStatus{
+   width: 130px;
+   text-align: center;
+   font-size: 16px;
+   background-color: #D9534F;
+   color:white;
+   border:none;
+   position: relative;
+   border:1px solid black;
+   margin-right: 22px;
+ }
+ .buttonStatus:hover{
+   background-color: #C9302C;
+ }
+
+ .PickUp{
+  margin-top: 30%;
+  margin-right:30%;
+  margin-left:30%;
+  width: 80%;
+  float: left;
+   position: relative;
+}
+.Cancel , .Deliver , .Delay , .ReAssign{
+  margin-top: 22%;
+  margin-right:30%;
+  margin-left:30%;
+  width: 80%;
+  float: left;
+   position: relative;
+}
+#DeliveryContent{
+ background-image: url(../img/background.jpg);
+ width: 100%;
+ height: 100%;
+  position: relative;
+}
+#container{
+  width: 100%;
+  height:82%;
+  border:1px solid black;
+  border-top:none;
+   position: relative;
+}
+#title{
+  text-align: center;
+  background-color: #F0AD4E;
+  border:1px solid black;
+  font-size:25px;
+  width: 100%;
+  position: relative;
+}
+
+  .Menu{
+    display: inline-block;
+    float: left;
+    height:100%;
+    width: 20%;
+    border-left: 1px solid black;
+     position: relative;
+  }
+.SearchByCustomer{
+ width: 100%;
+ text-align: center;
+ font-size: 16px;
+ background-color: #D9534F;
+ color:white;
+ position: relative;
+}
+.SearchByCourier{
+ margin-top: 50%;
+ width: 100%;
+ text-align: center;
+ font-size: 16px;
+ background-color: #D9534F;
+ color:white;
+  position: relative;
+}
+}

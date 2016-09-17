@@ -1,0 +1,111 @@
+marquee{
+	height: 78%;
+	text-align: center;
+}
+li{
+	float: left;
+}
+li a{
+	display: block;
+}
+.container{ 
+	  height:550px;
+	  width: 100%;
+	  position: absolute;
+	}
+	.Map{
+	  float: left;
+	  width:70%;
+	  height:100%; 
+	  position: relative;
+	}
+	.Menu{
+	  float: left;
+	  height:100%;
+	  width:30%;
+	  border:1px solid black;  
+	  position: relative;
+	  border-right: none;
+	}
+	.delivers{  
+	  height: 25%;
+	  position: relative;  
+	}
+
+	.Adelivery{
+	  position: relative;
+	  height: 25%;
+	}
+
+	.Wdelivery{
+	  position: relative;
+	  height: 25%;
+	}
+	.inputBox{
+		position: relative;
+		height: 79%;
+		overflow-y:scroll;
+		overflow-x:hidden;
+	}
+	.NewUpdate{
+	  position: relative;
+	  height: 25%;
+	}
+	.Top{
+	  border: 1px solid #000;
+	  height: 420px;
+	  position: relative;
+	  border-bottom: none;
+	}
+	.Bottom{
+	  border: 1px solid #000;
+	  height: 130px;
+	  position: relative;
+	}
+	.searchByCostumer{
+	  margin-top: 10px;
+	  float: left;
+	  border: 1px solid #000;
+	  margin-right:14%;
+	  margin-left:14%;
+	  height: 80%;
+	  width: 29%;
+	  font-align:center;
+	  position: relative;
+	}
+	.searchByDeliver{
+	  margin-top: 10px;
+	  display: inline-block;
+	  border: 1px solid #000;
+	  height: 80%;
+	  width: 29%;
+	  position: relative;
+	}  
+	.titleHeader , .redTitle{
+	 width: 100%;
+	 height: 30px;
+	 text-align: center;
+	 font-size: 16px;
+	 color:white;
+	 background-color: #F0AD4E;
+	 border:none;
+	 position: relative;
+
+	}
+	.redTitle , .Bottom .titleHeader{
+	  background-color: #D9534F;
+	  position: relative;
+	}
+	.searchBox{
+		height: 70px;
+		position: relative;
+	}
+	.searchBox input{
+		position: relative;
+		width: 70%;
+	}
+	.inputspan{
+		text-align: center;
+		position: relative;
+	}
+	

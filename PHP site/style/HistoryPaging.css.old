@@ -1,0 +1,15 @@
+
+#pagination a {
+display:inline-block;
+margin-right:5px;
+font-size: 16px;
+color:blue;
+}
+#pagination a:hover{
+    color:green;
+    font-weight: bold;
+}
+#pagination{
+  text-align: center;
+}
+ 

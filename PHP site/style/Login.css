@@ -1,0 +1,82 @@
+ body{
+         position: absolute; 
+         width: 99%;
+         height: 99%;
+         
+    }
+    #container{
+            height: 80%;
+          margin-top: 50px; 
+          margin-bottom: 50px; 
+        background-image: url(../img/background.jpg);
+        border-style: solid;
+        border-color:  none;
+        border-width: 1px;
+        position: relative; 
+        }
+        #title{
+            color:gray;
+            font-weight:bold;
+            font-size: 30px;
+            text-align: center;
+            position: relative; 
+        }
+
+.colorgraph {
+
+  margin-left: 34% ;
+    width: 32%; 
+  height: 5px;
+  border-top: 0;
+  background: #5cb85c;
+  border-radius: 5px;
+  text-align: center;
+  position: relative; 
+  
+}
+input[type=text] {
+    color: gray;
+    width: 400px;
+    height: 40px;
+    text-align: left;
+    -webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+position: relative; 
+}
+input[type=password] {
+    color: gray;
+    width: 400px;
+    height: 40px;
+    text-align: left;
+     -webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+position: relative; 
+}
+input[type=submit] {
+    background-color: #5cb85c;
+    color: white;
+    width: 400px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    position: relative; 
+}
+.form-group{
+text-align: center;
+position: relative; 
+}
+.btnlogin{
+text-align: center;
+position: relative; 
+}
+.checkbox{
+  width: 150px;
+   margin-right:auto;
+ margin-left:auto;
+ position: relative; 
+}
+fieldset{
+    border: none;
+}

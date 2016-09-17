@@ -1,0 +1,74 @@
+li{
+  float: left;
+}
+li a{
+  display: block;
+}
+
+.dataReport,.dataReportTitle{
+  width:100%;
+  table-layout: fixed;
+}
+
+.dataReportTitle td{
+  font-weight: bold;
+  text-align: center;
+  border:1px solid black;
+  background-color: rgba(0,0,0,0.2);
+}
+.dataReport td{
+  text-align: center;
+  border:1px solid black;
+  padding:0px;
+  word-wrap:break-word;
+}
+  .container{
+    height:85%;
+    width: 100%;
+    position: absolute;
+  }
+  .report{
+    background-image: url(../img/background.jpg);
+    float: left;
+    width:75%;
+    height:550px;
+    border:1px solid black;
+    border-top: none;
+    border-left: none;
+    position:relative;
+  }
+  .Menu{
+    position:relative;
+    width:25%;
+    float: left;
+    height:550px;
+  }
+  .reportstyle{ 
+    height: 100%;
+    border: 1px solid #000;
+    border-top: none;
+    position:relative;
+  }
+  #title{
+    text-align: center;
+    background-color: #F0AD4E;
+    border:1px solid black;
+    font-size:25px;
+    width: 100%;
+    position: relative;
+  }
+  .ReportButton{
+   margin-top:20px;
+   width: 85%;
+   text-align: center;
+   font-size: 16px;
+   background-color: #D9534F;
+   color:white;
+   border:none;
+   position: relative;
+   border:1px solid black;
+   margin-right: 22px;
+  }
+  .ReportButton:hover{
+   background-color: #C9302C;
+ }

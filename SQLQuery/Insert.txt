@@ -1,0 +1,16 @@
+DELIMITER $$
+use fus$$
+DROP PROCEDURE IF EXISTS UnAssign_Scooter$$
+CREATE PROCEDURE UnAssign_Scooter(	
+		In new_ScooterLicense 	varchar(7)			
+)
+BEGIN
+ if exists (SELECT *  FROM  scooterassign  WHERE ScooterLicense = new_ScooterLicense and isActive=1) then
+ update scooterassign set DropTime=sysDate()  where ScooterLicense = new_ScooterLicense and isActive=1;
+  update scooterassign set  isActive=0 where ScooterLicense = new_ScooterLicense and isActive=1;
+ else
+ select "Error. This scooter is not assign"; 
+
+	
+ end if;
+ END $$	

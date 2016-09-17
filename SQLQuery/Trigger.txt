@@ -1,0 +1,26 @@
+
+
+
+CREATE TRIGGER UpdateDelivery AFTER UPDATE ON 'delivery'
+UPDATE customers c 
+SET numberOfDelivery=c.numberOfDelivery +1 
+FROM delivery d
+WHERE c.CustomerID=d.CustomerID
+
+
+
+CREATE TRIGGER Set_Shift_Time AFTER UPDATE ON 'scooterassign'
+
+set @time = time(SELECT CURTIME());    
+update scooterassign s
+case  
+when time < '08:00:00' && time > '00:00:00' then      
+set s.Shift=0;
+
+when time < '16:00:00' && time > '08:00:00' then
+set s.Shift=1;
+
+else set s.Shift=1;
+
+end case;  
+

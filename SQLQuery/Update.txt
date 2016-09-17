@@ -1,0 +1,100 @@
+DELIMITER $$
+use fus$$
+DROP PROCEDURE IF EXISTS 	Assign_Courier_to_Scooter$$
+CREATE PROCEDURE Assign_Courier_to_Scooter(
+	IN New_CustomerID	int,
+	IN New_Address		varchar(255)
+	)
+BEGIN
+	update customers set Address=New_Address where CustomerID=New_CustomerID;
+END $$
+
+
+DELIMITER $$
+use fus$$
+DROP PROCEDURE IF EXISTS 	Set_Shift_Time$$
+CREATE PROCEDURE Set_Shift_Time(
+	IN New_CustomerID	int,
+	IN New_Phone		varchar(255)
+	)
+BEGIN
+	update customers set Phone=New_Phone where CustomerID=New_CustomerID;
+END $$
+
+
+
+
+
+DELIMITER $$
+use fus$$
+DROP PROCEDURE IF EXISTS Update_Courier$$
+CREATE PROCEDURE Update_Courier(
+		IN New_DeliveryID			int,
+		IN New_CourierID			int
+		
+)
+BEGIN
+    UPDATE Delivery set CourierID=New_CourierID where DeliveryID=New_DeliveryID;
+END $$
+
+DELIMITER $$
+use fus$$
+DROP PROCEDURE IF EXISTS Update_Status$$
+CREATE PROCEDURE Update_Status(
+		IN New_DeliveryID			int,
+		IN New_IsActive				tinyintint
+		
+)
+BEGIN
+    UPDATE Delivery set IsActive=New_IsActive where DeliveryID=New_DeliveryID;
+END $$
+
+
+DELIMITER $$
+use fus$$
+DROP PROCEDURE IF EXISTS Update_Cancel$$
+CREATE PROCEDURE Update_Cancel(
+		IN New_DeliveryID			int,
+		IN New_IsCancel				tinyintint
+		
+)
+BEGIN
+    UPDATE Delivery set IsCancel=New_IsCancel where DeliveryID=New_DeliveryID;
+END $$
+
+
+
+
+
+DELIMITER $$
+use fus$$
+DROP PROCEDURE IF EXISTS Update_Scooter_CurrentKM$$
+CREATE PROCEDURE Update_Scooter_CurrentKM(
+		IN new_ScooterLicense	varchar(7),
+		IN new_CurrentKM 	int
+)
+BEGIN
+    UPDATE Scooters set CurrentKM=new_CurrentKM where ScooterLicense=new_ScooterLicense;
+END $$
+
+
+
+DELIMITER $$
+use fus$$
+DROP PROCEDURE IF EXISTS Update_User_Address$$
+CREATE PROCEDURE Update_User_Address
+(IN new_User	varchar(255),
+IN new_Address 	varchar(255))
+BEGIN
+    UPDATE users set Address=new_Address where users.UserName=new_User;
+END $$
+
+DELIMITER $$
+use fus$$
+DROP PROCEDURE IF EXISTS Update_Courier_DrivingExperience$$
+CREATE PROCEDURE Update_Courier_DrivingExperience
+(IN new_Courier	varchar(255),
+IN new_DrivingExperience 	int)
+BEGIN
+    UPDATE courier set DrivingExperience=new_DrivingExperience where courier.Fname=new_Courier;
+END $$

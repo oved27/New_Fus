@@ -1,0 +1,61 @@
+	DELIMITER $$
+	use fus$$
+	DROP PROCEDURE IF EXISTS Display_scooter_Assign_By_Date$$
+	CREATE PROCEDURE Display_scooter_Assign_By_Date
+	(IN new_Date 	datetime)
+	BEGIN
+		SELECT * from scooterassign s where s.Date>new_Date order by s.Date asc; 
+	END $$
+
+	DELIMITER $$
+	use fus$$
+	DROP PROCEDURE IF EXISTS Display_scooter_Assign_By_Shift$$
+	CREATE PROCEDURE Display_scooter_Assign_By_Shift
+	(IN new_Shift 	int)
+	BEGIN
+		SELECT * from scooterassign s where s.Shift=new_Shift order by s.CourierID; 
+	END $$
+
+	DELIMITER $$
+	use fus$$
+	DROP PROCEDURE IF EXISTS Display_scooter_Assign_By_CourierID$$
+	CREATE PROCEDURE Display_scooter_Assign_By_CourierID
+	(IN new_CourierID 	int)
+	BEGIN
+		SELECT * from scooterassign s where s.CourierID=new_CourierID; 
+	END $$
+
+	DELIMITER $$
+	use fus$$
+	DROP PROCEDURE IF EXISTS Display_scooter_Active_Assign$$
+	CREATE PROCEDURE Display_scooter_Active_Assign
+	(IN new_IsActive 	int)
+	BEGIN
+		SELECT * from 'scooterassign' 's' where 's'.'IsActive'=new_IsActive order by 's'.'date' asc; 
+	END $$
+
+
+	
+DELIMITER $$
+use fus$$
+DROP PROCEDURE IF EXISTS Display_Scooter_By_Nexttretment$$
+CREATE PROCEDURE Display_Scooter_By_Nexttretment(
+		IN new_Nexttretment Varchar(7) )
+BEGIN
+    SELECT * FROM scooters where scooters.NextTreatment between (new_Nexttretment-10000 +1) and new_Nexttretment
+
+END $$
+
+DELIMITER $$
+use fus$$
+DROP PROCEDURE IF EXISTS Display_Delivery$$
+CREATE PROCEDURE Display_Delivery(
+		IN new_DeliveryID int )
+BEGIN
+    SELECT * FROM delivery WHERE DeliveryID=new_DeliveryID;
+
+END $$
+
+
+
+

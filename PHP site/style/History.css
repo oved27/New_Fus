@@ -1,0 +1,84 @@
+body{
+  width: 100%;
+}
+.dataHistory,.dataHistoryTitle{
+  width:100%;
+  table-layout: fixed;
+}
+li{
+  float: left;
+}
+li a{
+  display: block;
+}
+
+.dataHistoryTitle td{
+  font-weight: bold;
+  text-align: center;
+  border:1px solid black;
+  background-color: rgba(0,0,0,0.2);
+}
+.dataHistory td{
+  text-align: center;
+  border:1px solid black;
+  padding:0px;
+  word-wrap:break-word;
+}
+ 
+  .container{ 
+    width: 100%;
+    height:550px;
+    position: absolute;
+  }
+  .History{
+    background-image: url(../img/background.jpg);
+    float: left;
+    width:75%;
+    height:550px;
+    border: 1px solid #000;
+    border-top: none;
+    border-left: none;
+    position: relative;
+  }
+  .Menu{
+     border: 1px solid #000;
+    border-top: none;
+    width:25%;
+    float: left;
+    height:550px;
+    position: relative;
+  }
+
+
+  .HistoryTitle{ 
+   width: 100%;
+   text-align: center;
+   font-size: 20px;
+   background-color: #F0AD4E;
+   color:white;
+   position: relative;
+ }
+ .HistoryButton:hover {
+  background-color: #C9302C;
+  color: white;
+}
+.Title{
+  text-align: center;
+  background-color: #F0AD4E;
+  border:1px solid black;
+  font-size:25px;
+  width: 100%;
+  position: relative;
+}
+.HistoryButton{
+  margin-top:20px;
+   width: 85%;
+   text-align: center;
+   font-size: 16px;
+   background-color: #D9534F;
+   color:white;
+   border:none;
+   position: relative;
+   border:1px solid black;
+   margin-right: 22px;
+ }

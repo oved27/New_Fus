@@ -1,0 +1,160 @@
+User
+create new user
+call Create_New_user('mmm', 'mmm', 'mmm', 'mmm', 'mmm', '222-2222222', '0')
+
+display users by name
+call displaySpecificUser('mmm')
+
+display user by role
+call display_user_by_role()
+
+update existing user role
+call Update_User_Role('aaa',2)
+
+update existing user password
+call Update_User_password('aaa','123456')
+
+update existing user Address
+call Update_User_Address('aaa','ggg')
+
+update existing user Update_User_Phone
+call Update_User_Phone('aaa','963-8527415')
+
+
+
+*********************
+courier
+create new courier
+call create_New_Courier('jj', 'jj', 'jj', '666-5566778', '6')
+
+update existing courier phone
+call Update_Courier_Phone('aa','555-8889997')
+
+update existing courier Address
+call Update_Courier_Address('aa','frvf')
+
+update existing courier DrivingExperience
+call Update_Courier_DrivingExperience('aa',5)
+DrivingExperience
+
+display specific courier
+call DisplaySpecificCourier('ee')
+
+dispaly courier greatest then 5
+call DisplayDrivingExperience(5)
+
+Display statistic on courier with scooter
+call CourierAndScooterByID(22)
+
+********************
+scooter
+
+insert new scooter
+Call Insert_New_Scooter ('1234567', 'gfd', '1980', '20000', '15789');
+
+Display statistic on specific scooter
+call Display_Scooter_History('1111111')	
+
+Display all scooter deliverys
+call Display_ScooterDelivery('1111111')
+
+Assign scooter to courier
+call Assign_Scooter_To_Courier('1111111', '2014-09-12', '1', '22', '0')
+
+Display scooter by Type
+call Display_Scooter_By_Type('aa')
+
+Display scooter by Model
+call Display_Scooter_By_Model(1980)
+
+Display scooter by Nexttretment
+call Display_Scooter_By_Nexttretment(20000)
+
+Display scooter by KM
+call Display_Scooter_By_KM(4000);
+
+
+Update scooter by Nexttretment
+call Update_Scooter_Nexttretment('8888888');
+
+Update scooter by KM
+call Update_Scooter_CurrentKM('1111111', 6000);
+
+*************
+
+
+delivery
+
+create new order delivery
+call Create_New_Delivery('zxc', 'zxc', '3', '24');
+
+
+Update assign time
+call Update_Assign_Time(2);
+
+update pickup time
+call Update_PickUp_Time(3);
+
+update dropdown time
+call Update_DropDown_Time(4);
+
+update PickupAddress
+call Update_PickupAddress(1,'wer');
+
+update DropDownAddress
+call Update_DropDownAddress(2,'oiu');
+
+update	CourierID
+Call Update_Courier(5,23);
+
+update	IsActive
+call Update_Status (9,0);
+
+update	IsCancel
+call Update_Cancel(5,1);	
+
+
+Display statistic on specific delivery
+call Display_Delivery(1);
+*******************
+
+customer
+
+create new customer
+call Create_New_Customer('gg', 'gg', 'dgd', '345-3452345');
+
+UPDATE customer address
+call Update_Customer_Address(2,'oiuy');
+
+
+Update customer phone
+call Update_Customer_Phone(3,'058-7894562');
+
+
+
+Display all customer delivery
+call Display_Customer_Delivery (1)
+
+
+***************
+scooter Assign
+
+display scooter Assign By Date
+call Display_scooter_Assign_By_Date('2016-08-03 00:00:00');
+                          
+display scooter Assign By Shift
+call Display_scooter_Assign_By_Shift (1);  
+
+           
+display scooter Assign By CourierID
+call Display_scooter_Assign_By_CourierID(21);
+
+                          
+display scooter Assign By IsActive 	
+call Display_scooter_Active_Assign(1);
+
+assign scooter to courier
+call Assign_Scooter_To_Courier ('8888888',25);
+Unassign scooter to courier
+call UnAssign_Scooter('8888888');
+
